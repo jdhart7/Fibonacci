@@ -1,0 +1,28 @@
+<!doctype html public>
+<html>
+	<head>
+		<title>Fibonacci Assignment</title>
+		<script type = "text/javascript">
+			<!--
+				var string = "";	//declare string to hold fib numbers.
+				document.writeln("<center><h1>First 40 numbers of the fibonacci sequence: </h1></center>");	//prints header for page
+				function fibonacci(n) {		//recursive funcion to print first 40 numbers of sequence
+					if (n <= 2) {	//for the first two numbers of the sequence, prints 1
+						return 1;
+						
+					} else {		//put in n back into the funtion
+						return fibonacci(n - 2) + fibonacci(n - 1);
+					}
+				}
+				
+				for (var i = 1; i <= 40; i++) {		//while the 40th number hasn't been calculated,
+					string += fibonacci(i);	//calculate the fibonacci number for i and put it into the string
+					document.writeln(+fibonacci(i)+ ", ");	//print the number in the sequence, then print a comma
+				}
+				
+			//-->
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
